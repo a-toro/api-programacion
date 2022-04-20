@@ -1,0 +1,6 @@
+{
+  "name": "node-xanamf",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
