@@ -1,7 +1,20 @@
 {
-  "name": "node-starter",
-  "version": "0.0.0",
+  "name": "node-xanamf",
+  "dependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "express": "^4.17.3"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "babel-node": "babel-node --presets=@babel/preset-env",
+    "start": "node src/index.js",
+    "dev:1": "nodemon src/index.js",
+    "build": "babel src --out-dir build",
+    "dev": "nodemon src/index.js --exec babel-node"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
